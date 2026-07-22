@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Client Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="client.css">
+
+</head>
+
+<body>
+
+<!--=========================
+SIDEBAR
+==========================-->
+
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-top">
+
+        <a href="client-dashboard.html" class="logo">
+
+            <img src="stackly-logo-transparent.webp" alt="Stackly Logo">
+
+        </a>
+
+        <button id="closeSidebar">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <ul>
+
+        <li>
+
+            <a href="client-dashboard.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="my-projects.html">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                My Projects
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="consultations.html">
+
+                <i class="fa-solid fa-comments"></i>
+
+                Support Sessions
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="meetings.html">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                Meetings
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="client-reports.html">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Reports
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="login.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<!--=========================
+MAIN
+==========================-->
+
+<div class="main">
+
+<header>
+
+    <button id="menuBtn">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+    <h2>
+
+        Client Dashboard
+
+    </h2>
+
+    <div class="admin-info">
+
+        <i class="fa-solid fa-circle-user"></i>
+
+        <span id="clientEmail"></span>
+
+    </div>
+
+</header>
+
+<!--=====================================
+MEETINGS PAGE SECTION
+======================================-->
+
+<section class="meeting-page">
+
+    <!-- Heading -->
+
+    <div class="meeting-header">
+
+        <h1>IT Meetings</h1>
+
+        <p>
+            Manage your upcoming meetings, review completed sessions,
+            and stay connected with your technology engineers.
+        </p>
+
+    </div>
+
+    <!-- Meeting Table -->
+
+    <div class="meeting-table-card">
+
+        <div class="meeting-table-top">
+
+            <h2>Meeting Schedule</h2>
+
+            <a href="404-client.html"><button class="meeting-book-btn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Book Meeting
+
+            </button></a>
+
+        </div>
+
+        <div class="meeting-table-wrapper">
+
+            <table class="meeting-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Engineer</th>
+                        <th>Meeting Type</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>#M101</td>
+
+                        <td>Arjun Mehta</td>
+
+                        <td>Cloud Technology</td>
+
+                        <td>12 Jul 2026</td>
+
+                        <td>10:30 AM</td>
+
+                        <td>
+
+                            <span class="meeting-status upcoming">
+
+                                Upcoming
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="meeting-view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#M102</td>
+
+                        <td>Sarah Wilson</td>
+
+                        <td>Cloud Cost Review</td>
+
+                        <td>14 Jul 2026</td>
+
+                        <td>02:00 PM</td>
+
+                        <td>
+
+                            <span class="meeting-status confirmed">
+
+                                Confirmed
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="meeting-view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#M103</td>
+
+                        <td>Emily Clark</td>
+
+                        <td>Marketing Plan</td>
+
+                        <td>16 Jul 2026</td>
+
+                        <td>11:30 AM</td>
+
+                        <td>
+
+                            <span class="meeting-status pending">
+
+                                Pending
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="meeting-view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#M104</td>
+
+                        <td>David Thomas</td>
+
+                        <td>Technology Review</td>
+
+                        <td>18 Jul 2026</td>
+
+                        <td>04:00 PM</td>
+
+                        <td>
+
+                            <span class="meeting-status completed">
+
+                                Completed
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="meeting-view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- Today's Meeting -->
+
+    <div class="today-meeting-card">
+
+        <h2>Today's Meeting</h2>
+
+        <div class="today-meeting-info">
+
+            <div class="today-left">
+
+                <i class="fa-solid fa-video"></i>
+
+            </div>
+
+            <div class="today-right">
+
+                <h3>Cloud Operating Model Design</h3>
+
+                <p><strong>Engineer:</strong> Arjun Mehta</p>
+
+                <p><strong>Time:</strong> 10:30 AM - 11:30 AM</p>
+
+                <p><strong>Platform:</strong> Google Meet</p>
+
+            </div>
+
+            <a href="404-client.html"><button class="join-meeting-btn">
+
+                <i class="fa-solid fa-video"></i>
+
+                Join Meeting
+
+            </button></a>
+
+        </div>
+
+    </div>
+
+    <!-- Meeting Notes -->
+
+    <div class="meeting-notes-card">
+
+        <h2>Recent Meeting Notes</h2>
+
+        <ul>
+
+            <li>
+
+                <i class="fa-solid fa-check"></i>
+
+                Technology expansion technology approved for Q3.
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-check"></i>
+
+                Marketing budget increased by 15%.
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-check"></i>
+
+                New investment opportunities discussed.
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-check"></i>
+
+                Customer engagement plan scheduled for review.
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<script src="meetings.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+

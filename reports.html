@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+SIDEBAR
+========================= -->
+
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-top">
+
+        <a href="admin-dashboard.html" class="logo">
+
+            <img src="stackly-logo-transparent.webp" alt="Stackly Logo">
+
+        </a>
+
+        <button id="closeSidebar">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <ul>
+
+        <li>
+
+            <a href="admin-dashboard.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Dashboard
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="client.html">
+                <i class="fa-solid fa-users"></i>
+                Clients
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="projects.html">
+                <i class="fa-solid fa-briefcase"></i>
+                Projects
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="reports.html">
+                <i class="fa-solid fa-file-contract"></i>
+                Reports
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="meeting.html">
+                <i class="fa-solid fa-calendar-check"></i>
+                Meetings
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="advisors.html">
+                <i class="fa-solid fa-user-tie"></i>
+                Engineers
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="login.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- Overlay -->
+
+<div class="overlay" id="overlay"></div>
+
+<!-- =========================
+MAIN
+========================= -->
+
+<div class="main">
+
+    <!-- HEADER -->
+
+    <header>
+
+        <button id="menuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <h2>
+
+            Admin Dashboard
+
+        </h2>
+
+        <div class="admin-info">
+
+            <i class="fa-solid fa-user-circle"></i>
+
+            <span id="adminEmail">
+
+                admin@gmail.com
+
+            </span>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+REPORT PAGE CONTENT
+========================= -->
+
+<section class="report-section">
+
+
+    <!-- REPORT HEADING -->
+
+    <div class="report-heading">
+
+        <h1>Reports Management</h1>
+
+        <p>
+            Monitor IT reports, performance analysis, project reports and infrastructure summaries.
+        </p>
+
+    </div>
+
+    <!-- REPORT TABLE -->
+
+
+    <div class="report-table-card">
+
+
+        <div class="report-table-header">
+
+
+            <h2>
+                Recent Reports
+            </h2>
+
+
+            <a href="404-admin.html">
+
+                <button class="report-add-btn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Create Report
+
+                </button>
+
+            </a>
+
+
+        </div>
+
+
+
+
+
+        <div class="report-table-wrapper">
+
+
+            <table class="report-table">
+
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Report Name</th>
+
+                        <th>Category</th>
+
+                        <th>Created Date</th>
+
+                        <th>Status</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+
+
+
+                <tbody>
+
+
+                    <tr>
+
+                        <td>#501</td>
+
+                        <td>Monthly Sales Report</td>
+
+                        <td>Cloud Cost</td>
+
+                        <td>08 July 2026</td>
+
+                        <td>
+
+                            <span class="report-complete">
+                                Completed
+                            </span>
+
+                        </td>
+
+                        <td>
+
+
+                            <button class="report-view">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+
+
+                            <button class="report-download">
+
+                                <i class="fa-solid fa-download"></i>
+
+                            </button>
+
+
+                        </td>
+
+                    </tr>
+
+
+
+
+
+
+                    <tr>
+
+                        <td>#502</td>
+
+                        <td>Client Performance</td>
+
+                        <td>Technology</td>
+
+                        <td>05 July 2026</td>
+
+                        <td>
+
+                            <span class="report-progress">
+                                Processing
+                            </span>
+
+                        </td>
+
+                        <td>
+
+
+                            <button class="report-view">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+
+
+                            <button class="report-download">
+
+                                <i class="fa-solid fa-download"></i>
+
+                            </button>
+
+
+                        </td>
+
+
+                    </tr>
+
+
+
+
+
+
+                    <tr>
+
+                        <td>#503</td>
+
+                        <td>Project Analysis</td>
+
+                        <td>Development</td>
+
+                        <td>01 July 2026</td>
+
+                        <td>
+
+                            <span class="report-pending">
+                                Pending
+                            </span>
+
+                        </td>
+
+                        <td>
+
+
+                            <button class="report-view">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+
+
+                            <button class="report-download">
+
+                                <i class="fa-solid fa-download"></i>
+
+                            </button>
+
+
+                        </td>
+
+
+                    </tr>
+
+
+                </tbody>
+
+
+            </table>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+</section>
+
+
+<script src="reports.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+

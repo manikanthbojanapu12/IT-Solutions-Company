@@ -1,0 +1,575 @@
+﻿/*=========================================
+ GOOGLE FONT & RESET
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    background:#090909;
+
+    color:#fff;
+
+    overflow:hidden;
+
+}
+
+
+
+/*=========================================
+ 404 SECTION
+=========================================*/
+
+
+.error-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+/* Background Glow */
+
+
+.error-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    top:-150px;
+
+    right:-150px;
+
+    background:rgba(124,58,237,.18);
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    animation:glowMove 8s infinite alternate;
+
+}
+
+
+
+.error-page::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:400px;
+
+    height:400px;
+
+    bottom:-150px;
+
+    left:-150px;
+
+    background:rgba(15,118,110,.20);
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    animation:glowMove2 8s infinite alternate;
+
+}
+
+
+
+/*=========================================
+ CONTENT BOX
+=========================================*/
+
+
+.error-box{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:700px;
+
+    width:100%;
+
+    text-align:center;
+
+    padding:45px 35px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.35);
+
+    animation:fadeUp 1s ease;
+
+}
+
+
+
+/*=========================================
+ 404 NUMBER
+=========================================*/
+
+
+.error-number{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    font-size:150px;
+
+    font-weight:800;
+
+    line-height:1;
+
+    color:#fff;
+
+}
+
+
+
+.error-number span{
+
+    text-shadow:
+
+    0 15px 35px rgba(124,58,237,.35);
+
+}
+
+
+
+/* ICON */
+
+
+.error-icon{
+
+    width:120px;
+
+    height:120px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:
+
+    linear-gradient(135deg,#7c3aed,#4c1d95);
+
+    color:#fff;
+
+    font-size:55px;
+
+    box-shadow:
+
+    0 20px 45px rgba(124,58,237,.35);
+
+    animation:floatIcon 3s infinite ease-in-out;
+
+}
+
+
+
+/*=========================================
+ TEXT
+=========================================*/
+
+
+.error-box h1{
+
+    margin-top:30px;
+
+    margin-bottom:15px;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+}
+
+
+
+.error-box p{
+
+    color:#d9e4ec;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+
+
+/*=========================================
+ BUTTONS
+=========================================*/
+
+
+.error-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+.error-buttons a{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.4s;
+
+}
+
+
+
+/* HOME BUTTON */
+
+
+.home-btn{
+
+    background:
+
+    linear-gradient(135deg,#7c3aed,#4c1d95);
+
+    color:#fff;
+
+}
+
+
+
+.home-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+    0 15px 35px rgba(124,58,237,.35);
+
+}
+
+
+
+/* BACK BUTTON */
+
+
+.back-btn{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    color:#fff;
+
+    border:1px solid rgba(255,255,255,.25);
+
+}
+
+
+
+.back-btn:hover{
+
+    background:#fff;
+
+    color:#090909;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+/* ICON HOVER */
+
+
+.error-buttons i{
+
+    transition:.35s;
+
+}
+
+
+.error-buttons a:hover i{
+
+    transform:translateX(5px);
+
+}
+
+
+
+/*=========================================
+ ANIMATIONS
+=========================================*/
+
+
+@keyframes fadeUp{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+@keyframes floatIcon{
+
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+
+}
+
+
+
+@keyframes glowMove{
+
+
+from{
+
+transform:translate(0);
+
+}
+
+
+to{
+
+transform:translate(-50px,50px);
+
+}
+
+
+}
+
+
+
+@keyframes glowMove2{
+
+
+from{
+
+transform:translate(0);
+
+}
+
+
+to{
+
+transform:translate(50px,-50px);
+
+}
+
+
+}
+
+
+
+/*=========================================
+ RESPONSIVE
+=========================================*/
+
+
+@media(max-width:768px){
+
+
+.error-box{
+
+    padding:35px 20px;
+
+}
+
+
+
+.error-number{
+
+    font-size:90px;
+
+    gap:10px;
+
+}
+
+
+
+.error-icon{
+
+    width:75px;
+
+    height:75px;
+
+    font-size:32px;
+
+}
+
+
+
+.error-box h1{
+
+    font-size:30px;
+
+}
+
+
+
+.error-box p{
+
+    font-size:14px;
+
+}
+
+
+
+.error-buttons{
+
+    flex-direction:column;
+
+}
+
+
+
+.error-buttons a{
+
+    width:100%;
+
+}
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+.error-number{
+
+    font-size:70px;
+
+}
+
+
+
+.error-icon{
+
+    width:60px;
+
+    height:60px;
+
+    font-size:25px;
+
+}
+
+
+
+.error-box h1{
+
+    font-size:25px;
+
+}
+
+
+}
+
+/* IT Solutions Company brand overrides */
+.logo img, .footer-logo img, .loader-logo { filter:none !important; object-fit:contain; }
+.logo img, .footer-logo img { width:210px; max-height:62px; }
+:root { --primary:#7c3aed; --secondary:#4c1d95; --dark:#090909; --dark2:#151515; --white:#ffffff; }
+
+
+

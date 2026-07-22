@@ -1,0 +1,518 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+SIDEBAR
+========================= -->
+
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-top">
+
+        <a href="admin-dashboard.html" class="logo">
+
+            <img src="stackly-logo-transparent.webp" alt="Stackly Logo">
+
+        </a>
+
+        <button id="closeSidebar">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <ul>
+
+        <li>
+
+            <a href="admin-dashboard.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Dashboard
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="client.html">
+                <i class="fa-solid fa-users"></i>
+                Clients
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="projects.html">
+                <i class="fa-solid fa-briefcase"></i>
+                Projects
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="reports.html">
+                <i class="fa-solid fa-file-contract"></i>
+                Reports
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="meeting.html">
+                <i class="fa-solid fa-calendar-check"></i>
+                Meetings
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="advisors.html">
+                <i class="fa-solid fa-user-tie"></i>
+                Engineers
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="login.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- Overlay -->
+
+<div class="overlay" id="overlay"></div>
+
+<!-- =========================
+MAIN
+========================= -->
+
+<div class="main">
+
+    <!-- HEADER -->
+
+    <header>
+
+        <button id="menuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <h2>
+
+            Admin Dashboard
+
+        </h2>
+
+        <div class="admin-info">
+
+            <i class="fa-solid fa-user-circle"></i>
+
+            <span id="adminEmail">
+
+                admin@gmail.com
+
+            </span>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+MEETING PAGE CONTENT
+========================= -->
+
+<section class="meeting-section">
+
+
+    <!-- MEETING HEADING -->
+
+    <div class="meeting-heading">
+
+        <h1>Meeting Management</h1>
+
+        <p>
+            Schedule meetings, manage client discussions, team meetings and upcoming events.
+        </p>
+
+    </div>
+
+    <!-- MEETING TABLE -->
+
+
+    <div class="meeting-table-card">
+
+
+        <div class="meeting-table-header">
+
+
+            <h2>
+                Meeting Schedule
+            </h2>
+
+
+            <a href="404-admin.html">
+
+                <button class="meeting-add-btn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Meeting
+
+                </button>
+
+            </a>
+
+
+        </div>
+
+
+
+
+        <div class="meeting-table-wrapper">
+
+
+            <table class="meeting-table">
+
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Meeting Title</th>
+
+                        <th>Client</th>
+
+                        <th>Date</th>
+
+                        <th>Time</th>
+
+                        <th>Type</th>
+
+                        <th>Status</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+
+
+                <tbody>
+
+
+
+                    <tr>
+
+                        <td>#301</td>
+
+                        <td>Project Discussion</td>
+
+                        <td>Tech Solutions</td>
+
+                        <td>10 July 2026</td>
+
+                        <td>10:30 AM</td>
+
+                        <td>Online</td>
+
+                        <td>
+
+                            <span class="meeting-upcoming">
+                                Upcoming
+                            </span>
+
+                        </td>
+
+                        <td>
+
+
+                            <button class="meeting-view">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+
+                            <button class="meeting-edit">
+
+                                <i class="fa-solid fa-pen"></i>
+
+                            </button>
+
+
+                        </td>
+
+
+                    </tr>
+
+
+
+
+                    <tr>
+
+
+                        <td>#302</td>
+
+                        <td>Client Review</td>
+
+                        <td>Cloud Cost Group</td>
+
+                        <td>08 July 2026</td>
+
+                        <td>02:00 PM</td>
+
+                        <td>Offline</td>
+
+                        <td>
+
+                            <span class="meeting-completed">
+                                Completed
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+
+                            <button class="meeting-view">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+
+                            <button class="meeting-edit">
+
+                                <i class="fa-solid fa-pen"></i>
+
+                            </button>
+
+
+                        </td>
+
+
+                    </tr>
+
+
+
+
+                    <tr>
+
+
+                        <td>#303</td>
+
+                        <td>Team Planning</td>
+
+                        <td>Technology Hub</td>
+
+                        <td>15 July 2026</td>
+
+                        <td>11:00 AM</td>
+
+                        <td>Online</td>
+
+                        <td>
+
+                            <span class="meeting-pending">
+                                Pending
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+
+                            <button class="meeting-view">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+
+                            <button class="meeting-edit">
+
+                                <i class="fa-solid fa-pen"></i>
+
+                            </button>
+
+
+                        </td>
+
+
+                    </tr>
+
+
+
+                </tbody>
+
+
+            </table>
+
+
+        </div>
+
+
+    </div>
+
+
+<!-- =========================
+UPCOMING MEETINGS
+========================= -->
+
+<div class="upcoming-meetings">
+
+    <h2>Upcoming Meetings</h2>
+
+    <div class="meeting-list">
+
+        <div class="meeting-box">
+
+            <div class="meeting-date">
+                <h3>10</h3>
+                <span>Jul</span>
+            </div>
+
+            <div class="meeting-info">
+                <h4>Project Discussion</h4>
+                <p><i class="fa-solid fa-user"></i> Tech Solutions</p>
+                <p><i class="fa-solid fa-clock"></i> 10:30 AM</p>
+            </div>
+
+        </div>
+
+        <div class="meeting-box">
+
+            <div class="meeting-date">
+                <h3>15</h3>
+                <span>Jul</span>
+            </div>
+
+            <div class="meeting-info">
+                <h4>Team Planning</h4>
+                <p><i class="fa-solid fa-user-group"></i> Development Team</p>
+                <p><i class="fa-solid fa-clock"></i> 11:00 AM</p>
+            </div>
+
+        </div>
+
+        <div class="meeting-box">
+
+            <div class="meeting-date">
+                <h3>18</h3>
+                <span>Jul</span>
+            </div>
+
+            <div class="meeting-info">
+                <h4>Client Presentation</h4>
+                <p><i class="fa-solid fa-user"></i> Cloud Cost Group</p>
+                <p><i class="fa-solid fa-clock"></i> 03:00 PM</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================
+TODAY'S MEETING
+========================= -->
+
+<div class="today-meeting-card">
+
+    <div class="today-title">
+
+        <h2>Today's Next Meeting</h2>
+
+        <span>10:30 AM</span>
+
+    </div>
+
+    <div class="today-content">
+
+        <div class="today-item">
+            <strong>Meeting</strong>
+            <p>Project Discussion</p>
+        </div>
+
+        <div class="today-item">
+            <strong>Client</strong>
+            <p>Tech Solutions</p>
+        </div>
+
+        <div class="today-item">
+            <strong>Platform</strong>
+            <p>Google Meet</p>
+        </div>
+
+        <div class="today-item">
+            <strong>Duration</strong>
+            <p>60 Minutes</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</section>
+
+
+
+<script src="meeting.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+

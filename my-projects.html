@@ -1,0 +1,442 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Client Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="client.css">
+
+</head>
+
+<body>
+
+<!--=========================
+SIDEBAR
+==========================-->
+
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-top">
+
+        <a href="client-dashboard.html" class="logo">
+
+            <img src="stackly-logo-transparent.webp" alt="Stackly Logo">
+
+        </a>
+
+        <button id="closeSidebar">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <ul>
+
+        <li>
+
+            <a href="client-dashboard.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="my-projects.html">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                My Projects
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="consultations.html">
+
+                <i class="fa-solid fa-comments"></i>
+
+                Support Sessions
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="meetings.html">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                Meetings
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="client-reports.html">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Reports
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="login.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<!--=========================
+MAIN
+==========================-->
+
+<div class="main">
+
+<header>
+
+    <button id="menuBtn">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+    <h2>
+
+        Client Dashboard
+
+    </h2>
+
+    <div class="admin-info">
+
+        <i class="fa-solid fa-circle-user"></i>
+
+        <span id="clientEmail"></span>
+
+    </div>
+
+</header>
+
+<!--=========================
+MY PROJECTS SECTION
+==========================-->
+
+<section class="projects-section">
+
+    <!-- Heading -->
+
+    <div class="projects-heading">
+
+        <h1>My IT Projects</h1>
+
+        <p>
+            Track your technology roadmap, engineering decisions, open workstreams, and the milestones that move your IT plan forward.
+        </p>
+
+    </div>
+
+    <!-- Projects Table -->
+
+    <div class="project-table-card">
+
+        <div class="project-table-header">
+
+            <h2>Project List</h2>
+
+        </div>
+
+        <div class="project-table-wrapper">
+
+            <table class="project-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Project ID</th>
+                        <th>Project Name</th>
+                        <th>Engineer</th>
+                        <th>Category</th>
+                        <th>Progress</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>#PR101</td>
+
+                        <td>Technology Expansion</td>
+
+                        <td>Arjun Mehta</td>
+
+                        <td>Technology</td>
+
+                        <td>85%</td>
+
+                        <td>
+
+                            <span class="status progress">
+
+                                In Progress
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#PR102</td>
+
+                        <td>Cloud Cost Planning</td>
+
+                        <td>Sarah Wilson</td>
+
+                        <td>Cloud Cost</td>
+
+                        <td>100%</td>
+
+                        <td>
+
+                            <span class="status completed">
+
+                                Completed
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#PR103</td>
+
+                        <td>Digital Experience Technology</td>
+
+                        <td>Emily Clark</td>
+
+                        <td>Marketing</td>
+
+                        <td>40%</td>
+
+                        <td>
+
+                            <span class="status pending">
+
+                                Pending
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#PR104</td>
+
+                        <td>Cloud Roadmaps</td>
+
+                        <td>David Thomas</td>
+
+                        <td>Investment</td>
+
+                        <td>72%</td>
+
+                        <td>
+
+                            <span class="status progress">
+
+                                In Progress
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#PR105</td>
+
+                        <td>Market Intelligence</td>
+
+                        <td>Michael Scott</td>
+
+                        <td>Research</td>
+
+                        <td>100%</td>
+
+                        <td>
+
+                            <span class="status completed">
+
+                                Completed
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- Upcoming Milestones -->
+
+    <div class="milestone-card">
+
+        <h2>Upcoming Milestones</h2>
+
+        <ul>
+
+            <li>
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                Technology Review Meeting - 12 July 2026
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-file-signature"></i>
+
+                Infrastructure Report Submission - 15 July 2026
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Marketing Performance Review - 18 July 2026
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-users"></i>
+
+                Final Client Presentation - 22 July 2026
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<script src="my-projects.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+

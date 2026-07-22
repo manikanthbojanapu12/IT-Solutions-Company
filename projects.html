@@ -1,0 +1,745 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+SIDEBAR
+========================= -->
+
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-top">
+
+        <a href="admin-dashboard.html" class="logo">
+
+            <img src="stackly-logo-transparent.webp" alt="Stackly Logo">
+
+        </a>
+
+        <button id="closeSidebar">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <ul>
+
+        <li>
+
+            <a href="admin-dashboard.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Dashboard
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="client.html">
+                <i class="fa-solid fa-users"></i>
+                Clients
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="projects.html">
+                <i class="fa-solid fa-briefcase"></i>
+                Projects
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="reports.html">
+                <i class="fa-solid fa-file-contract"></i>
+                Reports
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="meeting.html">
+                <i class="fa-solid fa-calendar-check"></i>
+                Meetings
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="advisors.html">
+                <i class="fa-solid fa-user-tie"></i>
+                Engineers
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="login.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- Overlay -->
+
+<div class="overlay" id="overlay"></div>
+
+<!-- =========================
+MAIN
+========================= -->
+
+<div class="main">
+
+    <!-- HEADER -->
+
+    <header>
+
+        <button id="menuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <h2>
+
+            Admin Dashboard
+
+        </h2>
+
+        <div class="admin-info">
+
+            <i class="fa-solid fa-user-circle"></i>
+
+            <span id="adminEmail">
+
+                admin@gmail.com
+
+            </span>
+
+        </div>
+
+    </header>
+
+
+<!-- =========================
+PROJECT PAGE CONTENT
+========================= -->
+
+<section class="project-section">
+
+
+    <!-- PROJECT HEADING -->
+
+    <div class="project-heading">
+
+        <h1>Projects Management</h1>
+
+        <p>
+            Manage ongoing projects, project progress, deadlines and client assignments.
+        </p>
+
+    </div>
+
+
+
+    <!-- PROJECT SUMMARY CARDS -->
+
+    <!-- PROJECT TABLE -->
+
+
+    <div class="project-table-card">
+
+
+        <div class="project-table-header">
+
+
+            <h2>
+                Project Details
+            </h2>
+
+
+            <a href="404-admin.html" class="project-add-link">
+
+                <button class="project-add-btn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    New Project
+
+                </button>
+
+            </a>
+
+
+        </div>
+
+
+
+
+        <div class="project-table-wrapper">
+
+
+            <table class="project-table">
+
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Project Name</th>
+
+                        <th>Client</th>
+
+                        <th>Category</th>
+
+                        <th>Deadline</th>
+
+                        <th>Status</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+
+
+                <tbody>
+
+
+                    <tr>
+
+                        <td>#201</td>
+
+                        <td>Corporate Website</td>
+
+                        <td>Tech Solutions</td>
+
+                        <td>Web Development</td>
+
+                        <td>20 Jul 2026</td>
+
+                        <td>
+
+                            <span class="project-completed">
+                                Completed
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="project-view">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+
+                            <button class="project-edit">
+
+                                <i class="fa-solid fa-pen"></i>
+
+                            </button>
+
+
+                        </td>
+
+
+                    </tr>
+
+
+
+
+
+                    <tr>
+
+
+                        <td>#202</td>
+
+                        <td>Mobile Application</td>
+
+                        <td>Cloud Cost Group</td>
+
+                        <td>App Development</td>
+
+                        <td>05 Aug 2026</td>
+
+                        <td>
+
+                            <span class="project-progress">
+                                In Progress
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+
+                            <button class="project-view">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+
+                            <button class="project-edit">
+
+                                <i class="fa-solid fa-pen"></i>
+
+                            </button>
+
+
+                        </td>
+
+
+                    </tr>
+
+
+
+
+
+
+                    <tr>
+
+
+                        <td>#203</td>
+
+                        <td>Marketing Dashboard</td>
+
+                        <td>Technology Hub</td>
+
+                        <td>Analytics</td>
+
+                        <td>15 Aug 2026</td>
+
+                        <td>
+
+                            <span class="project-pending">
+                                Pending
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+
+                            <button class="project-view">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+
+                            <button class="project-edit">
+
+                                <i class="fa-solid fa-pen"></i>
+
+                            </button>
+
+
+                        </td>
+
+
+                    </tr>
+
+
+                </tbody>
+
+
+            </table>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =========================
+PROJECT OVERVIEW CARDS
+========================= -->
+
+
+<div class="project-overview">
+
+
+    <div class="project-box">
+
+        <i class="fa-solid fa-laptop-code"></i>
+
+        <div>
+
+            <h3>Active Projects</h3>
+
+            <h2>32</h2>
+
+            <p>Currently Running</p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="project-box">
+
+        <i class="fa-solid fa-users-gear"></i>
+
+        <div>
+
+            <h3>Team Members</h3>
+
+            <h2>18</h2>
+
+            <p>Developers Assigned</p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="project-box">
+
+        <i class="fa-solid fa-wallet"></i>
+
+        <div>
+
+            <h3>Total Budget</h3>
+
+            <h2>$85K</h2>
+
+            <p>Project Investment</p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="project-box">
+
+        <i class="fa-solid fa-calendar-days"></i>
+
+        <div>
+
+            <h3>Upcoming Deadlines</h3>
+
+            <h2>08</h2>
+
+            <p>This Month</p>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+<!-- =========================
+PROJECT STATUS BOARD
+========================= -->
+
+
+<div class="project-board">
+
+
+<h2>Project Status Board</h2>
+
+
+
+<div class="board-container">
+
+
+
+<!-- COMPLETED -->
+
+<div class="board-card">
+
+
+<h3>
+<i class="fa-solid fa-circle-check"></i>
+Completed
+</h3>
+
+
+<div class="project-mini-card">
+
+<h4>E-Commerce Website</h4>
+
+<p>Client : Fashion Store</p>
+
+<span>100% Completed</span>
+
+</div>
+
+
+
+<div class="project-mini-card">
+
+<h4>CRM System</h4>
+
+<p>Client : Technology Hub</p>
+
+<span>100% Completed</span>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- PROGRESS -->
+
+
+<div class="board-card">
+
+
+<h3>
+<i class="fa-solid fa-spinner"></i>
+In Progress
+</h3>
+
+
+<div class="project-mini-card">
+
+<h4>Mobile Banking App</h4>
+
+<p>Client : Cloud Cost Group</p>
+
+<span>65% Completed</span>
+
+</div>
+
+
+
+
+<div class="project-mini-card">
+
+<h4>AI Dashboard</h4>
+
+<p>Client : Tech Solutions</p>
+
+<span>45% Completed</span>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- PENDING -->
+
+
+<div class="board-card">
+
+
+<h3>
+<i class="fa-solid fa-clock"></i>
+Pending
+</h3>
+
+
+
+<div class="project-mini-card">
+
+<h4>Portfolio Website</h4>
+
+<p>Client : Creative Studio</p>
+
+<span>Waiting Approval</span>
+
+</div>
+
+
+
+
+<div class="project-mini-card">
+
+<h4>Marketing Tool</h4>
+
+<p>Client : Digital Agency</p>
+
+<span>Planning Stage</span>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- =========================
+TEAM ASSIGNMENT
+========================= -->
+
+
+<div class="team-project-section">
+
+
+<h2>Project Team Assignment</h2>
+
+
+
+<div class="team-grid">
+
+
+
+<div class="team-card">
+
+
+<img src="images/it-services.webp">
+
+
+<div>
+
+<h4>David Smith</h4>
+
+<p>Frontend Developer</p>
+
+</div>
+
+
+<span>
+5 Projects
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="team-card">
+
+
+<img src="images/it-cloud.webp">
+
+
+<div>
+
+<h4>Olivia Brown</h4>
+
+<p>UI/UX Designer</p>
+
+</div>
+
+
+<span>
+3 Projects
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="team-card">
+
+
+<img src="images/it-solutions.webp">
+
+
+<div>
+
+<h4>William John</h4>
+
+<p>Backend Developer</p>
+
+</div>
+
+
+<span>
+7 Projects
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<script src="projects.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+

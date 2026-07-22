@@ -1,0 +1,518 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Client Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="client.css">
+
+</head>
+
+<body>
+
+<!--=========================
+SIDEBAR
+==========================-->
+
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-top">
+
+        <a href="client-dashboard.html" class="logo">
+
+            <img src="stackly-logo-transparent.webp" alt="Stackly Logo">
+
+        </a>
+
+        <button id="closeSidebar">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <ul>
+
+        <li>
+
+            <a href="client-dashboard.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="my-projects.html">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                My Projects
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="consultations.html">
+
+                <i class="fa-solid fa-comments"></i>
+
+                Support Sessions
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="meetings.html">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                Meetings
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="client-reports.html">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Reports
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="login.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<!--=========================
+MAIN
+==========================-->
+
+<div class="main">
+
+<header>
+
+    <button id="menuBtn">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+    <h2>
+
+        Client Dashboard
+
+    </h2>
+
+    <div class="admin-info">
+
+        <i class="fa-solid fa-circle-user"></i>
+
+        <span id="clientEmail"></span>
+
+    </div>
+
+</header>
+
+<!--=========================
+WELCOME
+==========================-->
+
+<section class="dashboard">
+
+    <h1>
+
+        Welcome Back 
+
+    </h1>
+
+    <p>
+
+        Track your technology roadmap, consultation schedule, project milestones, and technology performance updates.
+
+    </p>
+
+    <!-- Statistics -->
+
+    <div class="analytics-grid">
+
+        <div class="analytics-card">
+
+            <div class="analytics-icon">
+
+                <i class="fa-solid fa-folder-open"></i>
+
+            </div>
+
+            <div class="analytics-content">
+
+                <h3>Active Projects</h3>
+
+                <h2>08</h2>
+
+            </div>
+
+        </div>
+
+        <div class="analytics-card">
+
+            <div class="analytics-icon">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+            </div>
+
+            <div class="analytics-content">
+
+                <h3>Meetings</h3>
+
+                <h2>14</h2>
+
+            </div>
+
+        </div>
+
+        <div class="analytics-card">
+
+            <div class="analytics-icon">
+
+                <i class="fa-solid fa-chart-pie"></i>
+
+            </div>
+
+            <div class="analytics-content">
+
+                <h3>Technology Score</h3>
+
+                <h2>92%</h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main Grid -->
+
+    <div class="dashboard-grid">
+
+        <!-- Projects -->
+
+        <div class="table-card">
+
+    <div class="card-header">
+        <h2>Recent IT Projects</h2>
+    </div>
+
+    <div class="table-wrapper">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Engineer</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Platform Expansion</td>
+                    <td>Arjun Mehta</td>
+                    <td>
+                        <span class="status progress">In Progress</span>
+                    </td>
+                    <td>08 Jul 2026</td>
+                </tr>
+
+                <tr>
+                    <td>Cloud Cost Planning</td>
+                    <td>Sarah Wilson</td>
+                    <td>
+                        <span class="status completed">Completed</span>
+                    </td>
+                    <td>06 Jul 2026</td>
+                </tr>
+
+                <tr>
+                    <td>Marketing Technology</td>
+                    <td>Emily Clark</td>
+                    <td>
+                        <span class="status pending">Pending</span>
+                    </td>
+                    <td>04 Jul 2026</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+        <!-- Quick Actions -->
+
+        <div class="quick-card">
+
+            <h2>
+
+                Quick Actions
+
+            </h2>
+
+            <div class="quick-buttons">
+
+                <a href="404-client.html"><button>
+
+                    <i class="fa-solid fa-calendar-plus"></i>
+
+                    Book Meeting
+
+                </button></a>
+
+                <a href="404-client.html"><button>
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    Contact Engineer
+
+                </button></a>
+
+                <a href="404-client.html"><button>
+
+                    <i class="fa-solid fa-file-arrow-down"></i>
+
+                    Download Report
+
+                </button></a>
+
+                <a href="404-client.html"><button>
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    View Analytics
+
+                </button></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<!--=====================================
+RECENT ACTIVITY
+======================================-->
+
+<div class="activity-panel">
+
+    <h2>Recent Activity</h2>
+
+    <ul>
+
+        <li>
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            Project "Technology Expansion" updated successfully.
+
+            <span>2 hrs ago</span>
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+            Discovery booked with Arjun Mehta.
+
+            <span>Yesterday</span>
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-download"></i>
+
+            Infrastructure Summary downloaded.
+
+            <span>2 days ago</span>
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-envelope"></i>
+
+            Engineer shared a new recommendation.
+
+            <span>3 days ago</span>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<!--=====================================
+ENGINEER RECOMMENDATIONS
+======================================-->
+
+<div class="advisor-suggestion-card">
+
+    <h2>Engineer Recommendations</h2>
+
+    <div class="advisor-suggestion-grid">
+
+        <div class="advisor-box">
+
+            <i class="fa-solid fa-lightbulb"></i>
+
+            <h3>Scale Technology</h3>
+
+            <p>
+                Expand your online services and improve customer engagement.
+            </p>
+
+        </div>
+
+        <div class="advisor-box">
+
+            <i class="fa-solid fa-chart-pie"></i>
+
+            <h3>Infrastructure Health</h3>
+
+            <p>
+                Reduce operational expenses to increase profitability.
+            </p>
+
+        </div>
+
+        <div class="advisor-box">
+
+            <i class="fa-solid fa-users"></i>
+
+            <h3>Team Performance</h3>
+
+            <p>
+                Schedule monthly technical leadership and productivity workshops.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--=====================================
+NOTIFICATIONS
+======================================-->
+
+<div class="notification-panel">
+
+    <h2>Notifications</h2>
+
+    <div class="notification-item">
+
+        <i class="fa-solid fa-bell"></i>
+
+        <div>
+
+            <h4>Meeting Reminder</h4>
+
+            <p>Your meeting starts in 30 minutes.</p>
+
+        </div>
+
+    </div>
+
+    <div class="notification-item">
+
+        <i class="fa-solid fa-file-circle-check"></i>
+
+        <div>
+
+            <h4>Report Ready</h4>
+
+            <p>Your Cloud Roadmap Report is available for download.</p>
+
+        </div>
+
+    </div>
+
+    <div class="notification-item">
+
+        <i class="fa-solid fa-comments"></i>
+
+        <div>
+
+            <h4>New Engineer Message</h4>
+
+            <p>You received feedback on your latest project.</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+</div>
+
+<script src="client-dashboard.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+

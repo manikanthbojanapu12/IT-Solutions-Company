@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+SIDEBAR
+========================= -->
+
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-top">
+
+        <a href="index.html" class="logo">
+
+            <img src="stackly-logo-transparent.webp" alt="Stackly Logo">
+
+        </a>
+
+        <button id="closeSidebar">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <ul>
+
+        <li class="active">
+
+            <a href="admin-dashboard.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Dashboard
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="client.html">
+                <i class="fa-solid fa-users"></i>
+                Clients
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="projects.html">
+                <i class="fa-solid fa-briefcase"></i>
+                Projects
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="reports.html">
+                <i class="fa-solid fa-file-contract"></i>
+                Reports
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="meeting.html">
+                <i class="fa-solid fa-calendar-check"></i>
+                Meetings
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="advisors.html">
+                <i class="fa-solid fa-user-tie"></i>
+                Engineers
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="setting.html">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="login.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- Overlay -->
+
+<div class="overlay" id="overlay"></div>
+
+<!-- =========================
+MAIN
+========================= -->
+
+<div class="main">
+
+    <!-- HEADER -->
+
+    <header>
+
+        <button id="menuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <h2>
+
+            Admin Dashboard
+
+        </h2>
+
+        <div class="admin-info">
+
+            <i class="fa-solid fa-user-circle"></i>
+
+            <span id="adminEmail">
+
+                admin@gmail.com
+
+            </span>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+SETTINGS SECTION
+========================= -->
+
+<section class="setting-section">
+
+    <!-- Heading -->
+
+    <div class="setting-heading">
+
+        <h1>Settings</h1>
+
+        <p>
+            Manage your account preferences and dashboard settings.
+        </p>
+
+    </div>
+
+    <!-- Settings Cards -->
+
+    <div class="setting-grid">
+
+        <!-- Profile -->
+
+        <div class="setting-card">
+
+            <div class="setting-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="setting-content">
+
+                <h3>Profile Settings</h3>
+
+                <p>
+                    Update your profile information and administrator details.
+                </p>
+
+                <button class="setting-btn">
+                    Edit Profile
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Password -->
+
+        <div class="setting-card">
+
+            <div class="setting-icon">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <div class="setting-content">
+
+                <h3>Change Password</h3>
+
+                <p>
+                    Keep your account secure by changing your password regularly.
+                </p>
+
+                <button class="setting-btn">
+                    Change Password
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Notifications -->
+
+        <div class="setting-card">
+
+            <div class="setting-icon">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+
+            <div class="setting-content">
+
+                <h3>Notifications</h3>
+
+                <p>
+                    Receive email and dashboard notifications for updates.
+                </p>
+
+                <label class="switch">
+
+                    <input type="checkbox" checked>
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+        <!-- Dark Mode -->
+
+        <div class="setting-card">
+
+            <div class="setting-icon">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+
+            <div class="setting-content">
+
+                <h3>Dark Mode</h3>
+
+                <p>
+                    Enable or disable dark mode for the admin dashboard.
+                </p>
+
+                <label class="switch">
+
+                    <input type="checkbox">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+        <!-- Language -->
+
+        <div class="setting-card">
+
+            <div class="setting-icon">
+                <i class="fa-solid fa-language"></i>
+            </div>
+
+            <div class="setting-content">
+
+                <h3>Language</h3>
+
+                <p>
+                    Select your preferred dashboard language.
+                </p>
+
+                <select class="setting-select">
+
+                    <option>English</option>
+                    <option>Tamil</option>
+                    <option>Hindi</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- Logout -->
+
+        <div class="setting-card">
+
+            <div class="setting-icon">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </div>
+
+            <div class="setting-content">
+
+                <h3>Logout</h3>
+
+                <p>
+                    Securely sign out from the admin dashboard.
+                </p>
+
+                <a href="index.html">
+
+                    <button class="setting-btn">
+                        Logout
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="setting.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+

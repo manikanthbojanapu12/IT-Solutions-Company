@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+SIDEBAR
+========================= -->
+
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-top">
+
+        <a href="admin-dashboard.html" class="logo">
+
+            <img src="stackly-logo-transparent.webp" alt="Stackly Logo">
+
+        </a>
+
+        <button id="closeSidebar">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <ul>
+
+        <li>
+
+            <a href="admin-dashboard.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Dashboard
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="client.html">
+                <i class="fa-solid fa-users"></i>
+                Clients
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="projects.html">
+                <i class="fa-solid fa-briefcase"></i>
+                Projects
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="reports.html">
+                <i class="fa-solid fa-file-contract"></i>
+                Reports
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="meeting.html">
+                <i class="fa-solid fa-calendar-check"></i>
+                Meetings
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="advisors.html">
+                <i class="fa-solid fa-user-tie"></i>
+                Engineers
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="login.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- Overlay -->
+
+<div class="overlay" id="overlay"></div>
+
+<!-- =========================
+MAIN
+========================= -->
+
+<div class="main">
+
+    <!-- HEADER -->
+
+    <header>
+
+        <button id="menuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <h2>
+
+            Admin Dashboard
+
+        </h2>
+
+        <div class="admin-info">
+
+            <i class="fa-solid fa-user-circle"></i>
+
+            <span id="adminEmail">
+
+                admin@gmail.com
+
+            </span>
+
+        </div>
+
+    </header>
+
+
+<!-- =========================
+CLIENT PAGE CONTENT
+========================= -->
+
+<section class="client-section">
+
+
+    <div class="client-heading">
+
+        <h1>Clients Management</h1>
+
+        <p>
+            Manage client profiles, projects, communication and technology details.
+        </p>
+
+    </div>
+
+    <!-- CLIENT LIST -->
+
+
+    <div class="client-table-card">
+
+
+        <div class="client-table-header">
+
+
+            <h2>
+                Client Details
+            </h2>
+
+
+            <a href="404-admin.html"><button class="client-add-btn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add Client
+
+            </button></a>
+
+
+        </div>
+
+
+
+
+        <div class="client-table-wrapper">
+
+
+        <table class="client-table">
+
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Client Name</th>
+
+                    <th>Email</th>
+
+                    <th>Company</th>
+
+                    <th>Service</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+
+
+            <tbody>
+
+
+                <tr>
+
+                    <td>#101</td>
+
+                    <td>John David</td>
+
+                    <td>john@gmail.com</td>
+
+                    <td>Tech Solutions</td>
+
+                    <td>Web Development</td>
+
+                    <td>
+
+                        <span class="client-active">
+                            Active
+                        </span>
+
+                    </td>
+
+
+                    <td>
+
+                        <button type="button" class="client-view">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                        
+                        <button type="button" class="client-edit">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+
+                    </td>
+
+
+                </tr>
+
+
+                <tr>
+
+                    <td>#102</td>
+
+                    <td>Olivia Brown</td>
+
+                    <td>olivia@gmail.com</td>
+
+                    <td>Cloud Cost Group</td>
+
+                    <td>IT Solutions</td>
+
+                    <td>
+
+                        <span class="client-pending">
+                            Pending
+                        </span>
+
+                    </td>
+
+
+                    <td>
+
+                        <button type="button" class="client-view">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                        
+                        <button type="button" class="client-edit">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+
+                    </td>
+
+                </tr>
+
+
+
+
+                <tr>
+
+                    <td>#103</td>
+
+                    <td>William Smith</td>
+
+                    <td>william@gmail.com</td>
+
+                    <td>Technology Hub</td>
+
+                    <td>Marketing</td>
+
+
+                    <td>
+
+                        <span class="client-progress">
+                            Progress
+                        </span>
+
+                    </td>
+
+
+                    <td>
+
+                        <button type="button" class="client-view">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                        
+                        <button type="button" class="client-edit">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+
+                    </td>
+
+
+                </tr>
+
+
+            </tbody>
+
+
+        </table>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+<script src="client.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+

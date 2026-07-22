@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login | IT Solutions Company</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <!-- Left Side -->
+
+    <div class="auth-left">
+
+        <a href="index.html" class="logo">
+            <img src="stackly-logo-transparent.webp" alt="Stackly Logo">
+        </a>
+
+        <h1>Welcome to IT Solutions Company</h1>
+
+        <p>
+            Access technology roadmaps, consultation notes, reports, dashboards, and technical updates in one place.
+        </p>
+
+        <a href="index.html" class="home-btn">
+            <i class="fa-solid fa-house"></i>
+            Back to Home
+        </a>
+
+    </div>
+
+
+
+    <!-- Right Side -->
+
+    <div class="auth-right">
+
+        <div class="form-box">
+
+            <!-- Tabs -->
+
+            <div class="tab-buttons">
+
+                <button class="tab-btn active" id="loginTab">
+                    Login
+                </button>
+
+                <button class="tab-btn" id="signupTab">
+                    Sign Up
+                </button>
+
+            </div>
+
+
+
+            <!-- ================= LOGIN ================= -->
+
+            <form id="loginForm" class="form active">
+
+                <h2>Login</h2>
+
+                <p>Sign in to continue your technology delivery work.</p>
+
+
+                <div class="input-box">
+
+    <label>Login As</label>
+
+    <div class="role-dropdown">
+
+        <button
+            type="button"
+            class="dropdown-btn"
+            id="loginRoleBtn">
+
+            <i class="fa-solid fa-user-shield"></i>
+
+            <span id="loginRoleText">
+                Select Role
+            </span>
+
+            <i class="fa-solid fa-angle-down"></i>
+
+        </button>
+
+        <div
+            class="dropdown-menu"
+            id="loginDropdown">
+
+            <div
+                class="dropdown-item"
+                data-role="Admin">
+
+                <i class="fa-solid fa-user-shield"></i>
+
+                <span>Admin</span>
+
+            </div>
+
+            <div
+                class="dropdown-item"
+                data-role="Client">
+
+                <i class="fa-solid fa-user"></i>
+
+                <span>Client</span>
+
+            </div>
+
+        </div>
+
+        <input
+            type="hidden"
+            id="loginRole"
+            name="role"
+            required>
+
+    </div>
+
+</div>
+
+
+                <div class="input-box">
+
+                    <label>Email Address</label>
+
+                    <input type="email"
+                    placeholder="Enter Email"
+                    required>
+
+                </div>
+
+
+                <div class="input-box password-box">
+
+                    <label>Password</label>
+
+                    <input type="password"
+                    id="loginPassword"
+                    placeholder="Enter Password"
+                    required>
+
+                    <i class="fa-solid fa-eye toggle-password"
+                    data-target="loginPassword"></i>
+
+                </div>
+
+
+                <div class="options">
+
+                    <label>
+
+                        <input type="checkbox" id="rememberMe">
+
+                        Remember Me
+
+                    </label>
+
+                    <a href="404.html">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <button type="submit" class="submit-btn">
+
+                    Login
+
+                </button>
+
+
+                <div class="switch-text">
+
+                    Don't have an account?
+
+                    <a href="#" id="showSignup">
+
+                        Sign Up
+
+                    </a>
+
+                </div>
+
+            </form>
+
+
+
+            <!-- ================= SIGNUP ================= -->
+
+            <form id="signupForm" class="form">
+
+                <h2>Create Account</h2>
+
+                <p>Create your technology delivery workspace account.</p>
+
+
+                <div class="input-box">
+
+                    <label>Full Name</label>
+
+                    <input type="text"
+                    id="signupName"
+                    placeholder="Enter Full Name"
+                    pattern="[A-Za-z\s]+"
+                    inputmode="text"
+                    autocomplete="name"
+                    required>
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <label>Register As</label>
+
+                    <div class="role-dropdown">
+
+    <button
+        type="button"
+        class="dropdown-btn"
+        id="signupRoleBtn">
+
+        <i class="fa-solid fa-user-plus"></i>
+
+        <span id="signupRoleText">
+            Choose Role
+        </span>
+
+        <i class="fa-solid fa-angle-down"></i>
+
+    </button>
+
+    <div
+        class="dropdown-menu"
+        id="signupDropdown">
+
+        <div
+            class="dropdown-item"
+            data-role="Admin">
+
+            <i class="fa-solid fa-user-shield"></i>
+
+            Admin
+
+        </div>
+
+        <div
+            class="dropdown-item"
+            data-role="Client">
+
+            <i class="fa-solid fa-user"></i>
+
+            Client
+
+        </div>
+
+    </div>
+
+    <input
+        type="hidden"
+        id="signupRole"
+        name="role"
+        required>
+
+</div>
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <label>Email Address</label>
+
+                    <input type="email"
+                    placeholder="Enter Email"
+                    required>
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <label>Phone Number</label>
+
+                    <input type="tel"
+                    id="signupPhone"
+                    placeholder="Enter Phone Number"
+                    maxlength="10"
+                    minlength="10"
+                    pattern="[0-9]{10}"
+                    inputmode="numeric"
+                    autocomplete="tel"
+                    required>
+
+                </div>
+
+
+                <div class="input-box password-box">
+
+                    <label>Password</label>
+
+                    <input type="password"
+                    id="signupPassword"
+                    placeholder="Create Password"
+                    required>
+
+                    <i class="fa-solid fa-eye toggle-password"
+                    data-target="signupPassword"></i>
+
+                </div>
+
+
+                <div class="input-box password-box">
+
+                    <label>Confirm Password</label>
+
+                    <input type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm Password"
+                    required>
+
+                    <i class="fa-solid fa-eye toggle-password"
+                    data-target="confirmPassword"></i>
+
+                </div>
+
+                <!-- Terms Checkbox -->
+
+<div class="remember">
+
+    <label class="terms-box">
+
+        <input type="checkbox" id="termsCheckbox">
+
+        <span class="checkmark"></span>
+
+        <p>
+            I agree to the Terms & Privacy Policy
+        </p>
+
+    </label>
+
+</div>
+
+
+                <button type="submit" class="submit-btn">
+
+                    Create Account
+
+                </button>
+
+
+                <div class="switch-text">
+
+                    Already have an account?
+
+                    <a href="#" id="showLogin">
+
+                        Login
+
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+

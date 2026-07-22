@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Client Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="client.css">
+
+</head>
+
+<body>
+
+<!--=========================
+SIDEBAR
+==========================-->
+
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-top">
+
+        <a href="client-dashboard.html" class="logo">
+
+            <img src="stackly-logo-transparent.webp" alt="Stackly Logo">
+
+        </a>
+
+        <button id="closeSidebar">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <ul>
+
+        <li>
+
+            <a href="client-dashboard.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="my-projects.html">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                My Projects
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="consultations.html">
+
+                <i class="fa-solid fa-comments"></i>
+
+                Support Sessions
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="meetings.html">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                Meetings
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="client-reports.html">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Reports
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="login.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<!--=========================
+MAIN
+==========================-->
+
+<div class="main">
+
+<header>
+
+    <button id="menuBtn">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+    <h2>
+
+        Client Dashboard
+
+    </h2>
+
+    <div class="admin-info">
+
+        <i class="fa-solid fa-circle-user"></i>
+
+        <span id="clientEmail"></span>
+
+    </div>
+
+</header>
+
+<!--=====================================
+CLIENT REPORTS SECTION
+======================================-->
+
+<section class="client-report-page">
+
+    <!-- Heading -->
+
+    <div class="client-report-header">
+
+        <h1>IT Reports</h1>
+
+        <p>
+            View, download and monitor your IT reports, project progress,
+            infrastructure summaries and engineer recommendations.
+        </p>
+
+    </div>
+
+    <!-- Reports Table -->
+
+    <div class="client-report-table-card">
+
+        <div class="client-report-top">
+
+            <h2>Available Reports</h2>
+
+        </div>
+
+        <div class="client-report-wrapper">
+
+            <table class="client-report-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Report</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>#R101</td>
+
+                        <td>Cloud Roadmap Report</td>
+
+                        <td>Technology</td>
+
+                        <td>08 Jul 2026</td>
+
+                        <td>
+
+                            <span class="report-status complete">
+
+                                Completed
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="client-report-view">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                            <button class="client-report-download">
+
+                                <i class="fa-solid fa-download"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#R102</td>
+
+                        <td>Infrastructure Summary</td>
+
+                        <td>Cloud Cost</td>
+
+                        <td>05 Jul 2026</td>
+
+                        <td>
+
+                            <span class="report-status progress">
+
+                                Processing
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="client-report-view">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                            <button class="client-report-download">
+
+                                <i class="fa-solid fa-download"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#R103</td>
+
+                        <td>Marketing Analysis</td>
+
+                        <td>Marketing</td>
+
+                        <td>02 Jul 2026</td>
+
+                        <td>
+
+                            <span class="report-status pending">
+
+                                Pending
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="client-report-view">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                            <button class="client-report-download">
+
+                                <i class="fa-solid fa-download"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#R104</td>
+
+                        <td>Project Performance</td>
+
+                        <td>Projects</td>
+
+                        <td>30 Jun 2026</td>
+
+                        <td>
+
+                            <span class="report-status complete">
+
+                                Completed
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="client-report-view">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                            <button class="client-report-download">
+
+                                <i class="fa-solid fa-download"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- Analytics -->
+
+    <div class="client-report-analysis">
+
+        <h2>Report Performance</h2>
+
+        <div class="analysis-item">
+
+            <span>IT Reports</span>
+
+            <div class="analysis-bar">
+
+                <div class="analysis-fill" style="width:92%;"></div>
+
+            </div>
+
+            <strong>92%</strong>
+
+        </div>
+
+        <div class="analysis-item">
+
+            <span>Cloud Cost Reports</span>
+
+            <div class="analysis-bar">
+
+                <div class="analysis-fill" style="width:85%;"></div>
+
+            </div>
+
+            <strong>85%</strong>
+
+        </div>
+
+        <div class="analysis-item">
+
+            <span>Marketing Reports</span>
+
+            <div class="analysis-bar">
+
+                <div class="analysis-fill" style="width:76%;"></div>
+
+            </div>
+
+            <strong>76%</strong>
+
+        </div>
+
+        <div class="analysis-item">
+
+            <span>Project Reports</span>
+
+            <div class="analysis-bar">
+
+                <div class="analysis-fill" style="width:94%;"></div>
+
+            </div>
+
+            <strong>94%</strong>
+
+        </div>
+
+    </div>
+
+    <!-- Recent Downloads -->
+
+    <div class="client-download-history">
+
+        <h2>Recent Downloads</h2>
+
+        <ul>
+
+            <li>
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+                Cloud Roadmap Report
+
+                <span>Today</span>
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-file-excel"></i>
+
+                Infrastructure Summary
+
+                <span>Yesterday</span>
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-file-word"></i>
+
+                Project Performance Report
+
+                <span>3 Days Ago</span>
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+                Marketing Analysis
+
+                <span>Last Week</span>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Quick Actions -->
+
+    <div class="client-report-actions">
+
+        <h2>Quick Actions</h2>
+
+        <div class="action-buttons">
+
+            <a href="404-client.html"><button>
+
+                <i class="fa-solid fa-download"></i>
+
+                Download Latest Report
+
+            </button></a>
+
+            <a href="404-client.html"><button>
+
+                <i class="fa-solid fa-share-nodes"></i>
+
+                Share Report
+
+            </button></a>
+
+            <a href="404-client.html"><button>
+
+                <i class="fa-solid fa-print"></i>
+
+                Print Report
+
+            </button></a>
+
+            <a href="404-client.html"><button>
+
+                <i class="fa-solid fa-envelope"></i>
+
+                Email Report
+
+            </button></a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="client-reports.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+

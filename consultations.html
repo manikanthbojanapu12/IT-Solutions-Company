@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Client Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="client.css">
+
+</head>
+
+<body>
+
+<!--=========================
+SIDEBAR
+==========================-->
+
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-top">
+
+        <a href="client-dashboard.html" class="logo">
+
+            <img src="stackly-logo-transparent.webp" alt="Stackly Logo">
+
+        </a>
+
+        <button id="closeSidebar">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <ul>
+
+        <li>
+
+            <a href="client-dashboard.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="my-projects.html">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                My Projects
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="consultations.html">
+
+                <i class="fa-solid fa-comments"></i>
+
+                Support Sessions
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="meetings.html">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                Meetings
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="client-reports.html">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Reports
+
+            </a>
+
+        </li>
+
+
+        <li>
+
+            <a href="login.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<!--=========================
+MAIN
+==========================-->
+
+<div class="main">
+
+<header>
+
+    <button id="menuBtn">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+    <h2>
+
+        Client Dashboard
+
+    </h2>
+
+    <div class="admin-info">
+
+        <i class="fa-solid fa-circle-user"></i>
+
+        <span id="clientEmail"></span>
+
+    </div>
+
+</header>
+
+
+<!--=========================
+CONSULTATIONS SECTION
+==========================-->
+
+<section class="consultation-section">
+
+    <!-- Heading -->
+
+    <div class="consultation-heading">
+
+        <h1>Technology Support Sessions</h1>
+
+        <p>
+            Stay connected with your engineers, monitor support progress, schedule meetings, and review technical recommendations for your systems.
+        </p>
+
+    </div>
+
+    <!-- Discovery Table -->
+
+    <div class="consult-table-card">
+
+
+        <div class="consult-table-wrapper">
+
+            <table class="consult-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Engineer</th>
+                        <th>Department</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>#C101</td>
+
+                        <td>Arjun Mehta</td>
+
+                        <td>Cloud Technology</td>
+
+                        <td>12 Jul 2026</td>
+
+                        <td>10:30 AM</td>
+
+                        <td>
+                            <span class="status upcoming">
+                                Upcoming
+                            </span>
+                        </td>
+
+                        <td>
+                            <button class="consult-view-btn">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#C102</td>
+
+                        <td>Sarah Wilson</td>
+
+                        <td>Cloud Cost</td>
+
+                        <td>08 Jul 2026</td>
+
+                        <td>02:00 PM</td>
+
+                        <td>
+                            <span class="status completed">
+                                Completed
+                            </span>
+                        </td>
+
+                        <td>
+                            <button class="consult-view-btn">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#C103</td>
+
+                        <td>Emily Clark</td>
+
+                        <td>Marketing</td>
+
+                        <td>15 Jul 2026</td>
+
+                        <td>11:00 AM</td>
+
+                        <td>
+                            <span class="status pending">
+                                Pending
+                            </span>
+                        </td>
+
+                        <td>
+                            <button class="consult-view-btn">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#C104</td>
+
+                        <td>David Thomas</td>
+
+                        <td>Technology</td>
+
+                        <td>18 Jul 2026</td>
+
+                        <td>03:30 PM</td>
+
+                        <td>
+                            <span class="status upcoming">
+                                Upcoming
+                            </span>
+                        </td>
+
+                        <td>
+                            <button class="consult-view-btn">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- Engineer Recommendations -->
+
+    <div class="recommendation-card">
+
+        <h2>Engineer Recommendations</h2>
+
+        <div class="recommendation-list">
+
+            <div class="recommend-item">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <div>
+
+                    <h3>Cloud Operating Model Design</h3>
+
+                    <p>
+                        Focus on expanding your online presence and improve customer engagement through digital marketing.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="recommend-item">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <div>
+
+                    <h3>Cloud Cost Planning</h3>
+
+                    <p>
+                        Review quarterly budgets and optimize operational expenses to improve profitability.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="recommend-item">
+
+                <i class="fa-solid fa-users"></i>
+
+                <div>
+
+                    <h3>Team Development</h3>
+
+                    <p>
+                        Conduct technical leadership training sessions to improve productivity and team collaboration.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Upcoming Schedule -->
+
+    <div class="schedule-card">
+
+        <h2>Upcoming Discovery Schedule</h2>
+
+        <ul>
+
+            <li>
+
+                <i class="fa-solid fa-calendar-day"></i>
+
+                <div>
+
+                    <strong>12 July 2026</strong>
+
+                    <p>Corporate IT Consultation with Arjun Mehta</p>
+
+                </div>
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-calendar-day"></i>
+
+                <div>
+
+                    <strong>15 July 2026</strong>
+
+                    <p>Marketing Discovery with Emily Clark</p>
+
+                </div>
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-calendar-day"></i>
+
+                <div>
+
+                    <strong>18 July 2026</strong>
+
+                    <p>Technology Planning with David Thomas</p>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<script src="consultations.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
