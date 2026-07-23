@@ -1634,5 +1634,30 @@ TERMS CHECKBOX
 .logo img, .footer-logo img { width:210px; max-height:62px; }
 :root { --primary:#7c3aed; --secondary:#4c1d95; --dark:#090909; --dark2:#151515; --white:#ffffff; }
 
+.auth-left .logo img{
+    filter:
+    brightness(0)
+    saturate(100%)
+    invert(20%)
+    sepia(92%)
+    saturate(3238%)
+    hue-rotate(347deg)
+    brightness(91%)
+    contrast(95%) !important;
+}
+
+.auth-left .logo:hover img{
+    filter:
+    brightness(0)
+    saturate(100%)
+    invert(20%)
+    sepia(92%)
+    saturate(3238%)
+    hue-rotate(347deg)
+    brightness(105%)
+    contrast(100%)
+    drop-shadow(0 10px 20px rgba(220,38,38,.45)) !important;
+}
+
 
 

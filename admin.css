@@ -107,13 +107,13 @@ SIDEBAR
     top:0;
     width:280px;
     height:100vh;
-    background:#090909;
-    color:#fff;
+    background:#fff;
+    color:#090909;
     overflow-y:auto;
     overflow-x:hidden;
     transition:.4s ease;
     z-index:1000;
-    box-shadow:8px 0 30px rgba(0,0,0,.18);
+    box-shadow:5px 0 30px rgba(0,0,0,.08);
 }
 
 .sidebar::-webkit-scrollbar{
@@ -132,7 +132,7 @@ SIDEBAR
     justify-content:space-between;
     align-items:center;
     padding:22px;
-    background:#090909;
+    background:#fff;
     z-index:5;
 }
 
@@ -174,8 +174,8 @@ CLOSE BUTTON
     height:40px;
     border:none;
     border-radius:10px;
-    background:rgba(255,255,255,.08);
-    color:#fff;
+    background:transparent;
+    color:#090909;
     cursor:pointer;
     font-size:18px;
     transition:.35s;
@@ -205,7 +205,7 @@ SIDEBAR MENU
     align-items:center;
     gap:15px;
     padding:15px 18px;
-    color:#ffe6e8;
+    color:#595959;
     text-decoration:none;
     border-radius:14px;
     transition:.35s;
@@ -220,7 +220,7 @@ SIDEBAR MENU
 }
 
 .sidebar ul li a:hover{
-    background:#7c3aed;
+    background:linear-gradient(135deg,#7c3aed,#4c1d95);
     color:#fff;
     transform:translateX(8px);
 }
@@ -6495,11 +6495,11 @@ SMALL MOBILE
     gap:14px;
     padding:14px 18px;
     text-decoration:none;
-    color:#fff;
+    color:#595959;
     border-radius:12px;
     transition:.35s;
-    background:rgba(255,255,255,.06);
-    border:1px solid rgba(255,255,255,.08);
+    background:transparent;
+    border:1px solid transparent;
 }
 
 .sidebar ul li:hover{
@@ -6507,15 +6507,15 @@ SMALL MOBILE
 }
 
 .sidebar ul li:hover a{
-    background:#7c3aed;
+    background:linear-gradient(135deg,#7c3aed,#4c1d95);
     color:#fff;
     border-color:#7c3aed;
     transform:translateX(5px);
 }
 
 .sidebar ul li.active{
-    background:linear-gradient(135deg,#7c3aed,#4c1d95);
-    box-shadow:0 10px 25px rgba(124,58,237,.35);
+    background:transparent;
+    box-shadow:none;
 }
 
 .sidebar ul li.active a{
